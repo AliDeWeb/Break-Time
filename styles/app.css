@@ -588,7 +588,7 @@ video {
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 1.75rem;
+  padding: 1rem;
 }
 
 .time-watch__wrapper .time-watch::backdrop {
@@ -598,6 +598,12 @@ video {
 
 :is(.dark .time-watch__wrapper .time-watch) {
   background-color: rgb(63 63 70 / 0.5);
+}
+
+@media (min-width: 640px) {
+  .time-watch__wrapper .time-watch {
+    padding: 1.75rem;
+  }
 }
 
 .time-date__wrapper .time-date {
@@ -639,12 +645,12 @@ video {
   font-family: Inter-roman;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
+.text-\[20px\] {
+  font-size: 20px;
 }
 
-.text-\[50px\] {
-  font-size: 50px;
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-bold {
@@ -664,4 +670,14 @@ video {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .sm\:text-\[50px\] {
+    font-size: 50px;
+  }
 }
