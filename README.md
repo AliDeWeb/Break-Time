@@ -1,4 +1,4 @@
-# ⏰ Dynamic Time Display ⏱️
+# ⏰ Dynamic Time Display
 
 Hello there! Welcome to the repo of our time-telling tale. Our little project is all about keeping you in sync with time, styled with the magic of HTML, CSS, JavaScript, and the ever-so-sleek TailwindCSS.
 
