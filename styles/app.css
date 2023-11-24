@@ -610,8 +610,16 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
