@@ -6,7 +6,7 @@
     <title>Break Time</title>
     <link rel="icon" href="./site-icon.png" />
     <link rel="stylesheet" href="./styles/app.css" />
-    <script src="./scripts/app.js" defer></script>
+    <script type="module" src="./scripts/app.js" defer></script>
   </head>
   <body
     class="flex items-center justify-center h-screen bg-gray-300 dark:bg-zinc-800 font-Inter-roman font-bold"
@@ -15,20 +15,20 @@
       <div
         class="time-watch__wrapper inline-flex justify-center items-center text-[50px] text-zinc-700 dark:text-white"
       >
-        <span class="time-watch" id="hour">19</span>
+        <span class="time-watch" id="hour"></span>
         <span> : </span>
-        <span class="time-watch" id="minute">25</span>
+        <span class="time-watch" id="minute"></span>
         <span> : </span>
-        <span class="time-watch" id="second">30</span>
+        <span class="time-watch" id="second"></span>
       </div>
       <div
         class="time-date__wrapper inline-flex justify-center items-center text-[25px] text-zinc-700 dark:text-white"
       >
-        <span class="time-date">2023</span>
+        <span class="time-date" id="year"></span>
         <span class="time-date"> / </span>
-        <span class="time-date">Nov</span>
+        <span class="time-date" id="month"></span>
         <span class="time-date"> / </span>
-        <span class="time-date">24</span>
+        <span class="time-date" id="day"></span>
       </div>
     </div>
   </body>
