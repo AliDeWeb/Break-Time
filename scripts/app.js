@@ -14,6 +14,10 @@ const daySelector = $.getElementById(`day`);
 let date;
 
 window.addEventListener(`load`, () => {
+  if (!localStorage.darkTheme) {
+    localStorage.setItem(`darkTheme`, JSON.stringify(false));
+  }
+
   if (JSON.parse(localStorage.darkTheme) === true) {
     $.documentElement.classList.add(`dark`);
   }
