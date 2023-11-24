@@ -19,10 +19,31 @@ window.addEventListener(`load`, () => {
   }
 
   setInterval(() => {
+    function checkHourLength() {
+      if (date.getHours() < 10) {
+        return `0${date.getHours()}`;
+      } else {
+        return date.getHours();
+      }
+    }
+    function checkMinuteLength() {
+      if (date.getMinutes() < 10) {
+        return `0${date.getMinutes()}`;
+      } else {
+        return date.getMinutes();
+      }
+    }
+    function checkSecondLength() {
+      if (date.getSeconds() < 10) {
+        return `0${date.getSeconds()}`;
+      } else {
+        return date.getSeconds();
+      }
+    }
     date = new Date();
-    hourSelector.innerHTML = date.getHours();
-    minuteSelector.innerHTML = date.getMinutes();
-    secondSelector.innerHTML = date.getSeconds();
+    hourSelector.innerHTML = checkHourLength();
+    minuteSelector.innerHTML = checkMinuteLength();
+    secondSelector.innerHTML = checkSecondLength();
     yearSelector.innerHTML = date.getFullYear();
     monthSelector.innerHTML = months[date.getMonth()];
     daySelector.innerHTML = days[date.getDay()];
